@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Wheader":"../../components/Wheader/Wheader"
+  },
+  "navigationBarTitleText": "我的页面",
+  "navigationBarBackgroundColor": "#666666"
+}
