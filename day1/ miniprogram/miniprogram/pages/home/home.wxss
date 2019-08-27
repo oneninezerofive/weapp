@@ -1,9 +1,1 @@
 /* miniprogram/pages/home/home.wxss */
-.van-search{
-  margin-top: 40rpx;
-  width: 100%;
-}
-.weui-grid {
-  width:20%;
-  padding: 10px 10px;
-}

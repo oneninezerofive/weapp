@@ -1,0 +1,2 @@
+<!--components/Wdivider/Wdivider.wxml-->
+<view class="van-divider">附近的商家</view>

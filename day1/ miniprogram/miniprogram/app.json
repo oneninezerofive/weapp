@@ -3,16 +3,17 @@
     "pages/home/home",
     "pages/mine/mine",
     "pages/index/index",
-    "pages/logs/logs"
-    
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#58bc58",
     "navigationBarTitleText": "微信小程序",
     "navigationBarTextStyle": "white",
-    "navigationStyle":"custom",
-    "backgroundColorTop":"#58bc58"
+    "navigationStyle": "custom",
+    "backgroundColorTop": "#58bc58",
+    "enablePullDownRefresh": true
   },
   "sitemapLocation": "sitemap.json"
 }

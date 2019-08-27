@@ -6,15 +6,15 @@
   bind:search="onSearch"
   bind:cancel="onCancel"
 />
-<view class="page">
-    <view class="page__bd">
-        <view class="weui-grids">
-            <block wx:for="{{grids}}" wx:key="*this">
-                <navigator url="" class="weui-grid" hover-class="weui-grid_active">
-                    <image class="weui-grid__icon" src="{{item.icon}}" />
-                    <view class="weui-grid__label">{{item.name}}</view>
-                </navigator>
-            </block>
-        </view>
-    </view>
-</view>
+<Wgrids grids="{{grids}}" />
+<Wdivider/>
+<van-card
+  wx:for="{{cards}}"
+  id="{{index}}"
+  bindtap="navToDetailPage"
+  num="2"
+  price="2.00"
+  desc="{{item.address}}"
+  title="{{item.shopName}}"
+  thumb="{{ item.picUrl }}"
+/>
