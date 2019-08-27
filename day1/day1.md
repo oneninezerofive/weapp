@@ -239,3 +239,9 @@ Component({
 ```bash
 npm i vant-weapp -S --production
 ```
+
+下载源码
+```bash
+git clone https://github.com/youzan/vant-weapp.git
+```
+把文件夹里面把dist文件夹拷贝到项目中
