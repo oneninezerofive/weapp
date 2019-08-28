@@ -15,6 +15,30 @@ Page({
 
   },
 
+  // 预览图片
+  preview(e){
+    console.log(e)
+    wx.previewImage({
+      current: '', // 当前显示图片的http链接
+      urls: [e.target.dataset.src, e.target.dataset.src, e.target.dataset.src] // 需要预览的图片http链接列表
+    })
+  },
+  // 录音功能
+  record(){
+    wx.startRecord({
+      success(res) {
+        const tempFilePath = res.tempFilePath
+        // 播放录音
+        wx.playVoice({
+          filePath: tempFilePath,
+          complete() { }
+        })
+      }
+    })
+    setTimeout(function () {
+      wx.stopRecord() // 结束录音
+    }, 10000)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

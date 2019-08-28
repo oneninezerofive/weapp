@@ -1,2 +1,5 @@
 <!--miniprogram/pages/detail/detail.wxml-->
 <text>miniprogram/pages/detail/detail.wxml</text>
+<image data-src="https://avatars2.githubusercontent.com/u/52487248?s=460&v=4" bindlongtap="preview" src="https://avatars2.githubusercontent.com/u/52487248?s=460&v=4"></image>
+
+<button bindtap="record">录音</button>

@@ -38,6 +38,20 @@ Page({
     })
     console.log(e.target.id)
   },
+
+  getLocation(){
+    console.log('获取经纬度信息')
+    wx.getLocation({
+      type: 'wgs84',
+      success(res) {
+        console.log(res)
+        const latitude = res.latitude
+        const longitude = res.longitude
+        const speed = res.speed
+        const accuracy = res.accuracy
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -51,7 +65,7 @@ Page({
       })
     })
     this.getCards();
-    
+    this.getLocation();
   },
 
   /**

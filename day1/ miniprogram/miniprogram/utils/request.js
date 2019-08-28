@@ -14,12 +14,19 @@ exports["default"] = (function (url, data, method) {
         }
     })(method);
     return new Promise(function (resolve, reject) {
+        wx.showLoading({
+            title: '加载中'
+        });
         wx.request({
             url: url,
             data: data,
             method: method || 'get',
             header: header,
             success: function (res) {
+              setTimeout(()=>{
+                wx.hideLoading();
+              },2000)
+                
                 resolve(res.data);
                 console.log(res.data);
             },
